@@ -1,0 +1,35 @@
+[debug] [2018-11-11T08:17:42.046Z] ----------------------------------------------------------------------
+[debug] [2018-11-11T08:17:42.049Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-11-11T08:17:42.049Z] CLI Version:   6.0.1
+[debug] [2018-11-11T08:17:42.049Z] Platform:      darwin
+[debug] [2018-11-11T08:17:42.049Z] Node Version:  v6.4.0
+[debug] [2018-11-11T08:17:42.049Z] Time:          Sun Nov 11 2018 15:17:42 GMT+0700 (+07)
+[debug] [2018-11-11T08:17:42.049Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-11T08:17:42.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-11T08:17:42.064Z] > authorizing via signed-in user
+[debug] [2018-11-11T08:17:42.064Z] [iam] checking project tridme-demo for permissions ["firebase.projects.get"]
+[debug] [2018-11-11T08:17:42.067Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tridme-demo:testIamPermissions  
+
+[debug] [2018-11-11T08:17:43.256Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-11T08:17:43.258Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tridme-demo  
+ 
+[debug] [2018-11-11T08:17:44.481Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Volumes/BLACK/2-CODE4FOOD/8-bitbucket/1-leteastudio/trid/1-DEMO/1-admin/1-firebase'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-11-11T08:17:44.995Z] Fetching environment
+[debug] [2018-11-11T08:17:45.202Z] Error: EACCES: permission denied, open '/Users/black/.config/gcloud/application_default_credentials.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:640:18)
+    at Object.fs.writeFileSync (fs.js:1333:33)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/ensureDefaultCredentials.js:28:8)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/functionsEmulator.js:106:5)
+    at Object.module.exports.start (/usr/local/lib/node_modules/firebase-tools/lib/serve/functions.js:7:33)
+    at /usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:18:23
+    at arrayMap (/usr/local/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
+    at Function.map (/usr/local/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9556:14)
+    at _serve (/usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:16:26)
+[error] 
+[error] Error: An unexpected error has occurred.
